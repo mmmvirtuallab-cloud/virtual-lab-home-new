@@ -53,7 +53,7 @@ body {
 .main-footer {
     flex-shrink: 0; /* Prevents footer from shrinking */
     background-color: var(--nav-white);
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     border-top: 1px solid var(--border-color);
     color: var(--text-light);

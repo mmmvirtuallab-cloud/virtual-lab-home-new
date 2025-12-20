@@ -82,7 +82,7 @@ function render() {
                 <div class="exp-info">
                     <h3>${exp.title} <span class="badge">${exp.subject}</span></h3>
                     <p>${exp.description}</p>
-                    <button class="btn-start" onclick="window.open('${exp.link}', '_blank')">Start Experiment</button>
+                    <button class="btn-start" onclick="window.open('${exp.link}', '_self')">Start Experiment</button>
                 </div>
             `;
             listContainer.appendChild(div);
