@@ -47,7 +47,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; /* Centers the content */
-}
+} 
 
 /* 4. Fixed Footer (Stays at bottom) */
 .main-footer {
