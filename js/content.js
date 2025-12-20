@@ -117,6 +117,14 @@ const EXPERIMENTS = [
         description: 'Measure minute angular deviations and verify surface straightness using precision optical principles.',
         imagePath: 'images/autocollimator.png',
         link: 'https://mmmvirtuallab-cloud.github.io/autocollimator-lab/'
+    },
+    {
+        id: 'exp-6',
+        subject: 'Metrology',
+        title: 'Bevel Protractor',
+        description: 'Measure and layout angles with high precision using a versatile bevel protractor.',
+        imagePath: 'images/bevelprotractor.png',
+        link: '/bevel-protractor/'
     }
 ];
 
