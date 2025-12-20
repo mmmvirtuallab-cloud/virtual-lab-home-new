@@ -92,7 +92,7 @@ const EXPERIMENTS = [
         title: "Micrometer",
         description: 'An outside micrometer is a precision measuring instrument used to measure external dimensions with high accuracy.',
         imagePath: 'images/micrometer.png',
-        link: "https://mmmvirtuallab-cloud.github.io/micrometer/index.html"
+        link: "/micro-meter/"
     },
     {
         id: 'exp-3',
