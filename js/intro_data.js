@@ -6,10 +6,10 @@ export const INTRO_CONTENT = {
     
     // Button Text & Link
     buttonLabel: "Go to Experiment",
-    buttonLink: "https://isu-ismail.github.io/profile-projector/#/experiments/profile-projector/Aim",
+    buttonLink: "/profile-projector/lab",
 
     // Main Page Content
-    mainHeading: "Study of Profile Projector and Measurement of Object Dimensions",
+    mainHeading: "Study of Profile Projector ",
     
     // Aim Section
     aimTitle: "Aim",

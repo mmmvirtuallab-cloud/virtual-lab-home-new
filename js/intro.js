@@ -3,37 +3,42 @@ import { INTRO_CONTENT } from './intro_data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Set Header Title & Button
+    // 1. Header
     document.getElementById('top-bar-title').textContent = INTRO_CONTENT.headerTitle;
     const btn = document.getElementById('action-btn');
     btn.textContent = `${INTRO_CONTENT.buttonLabel} →`;
     btn.onclick = () => window.open(INTRO_CONTENT.buttonLink, '_blank');
 
-    // 2. Set Main Title
+    // 2. Main Title
     document.getElementById('main-title').textContent = INTRO_CONTENT.mainHeading;
 
-    // 3. Render Aim & Acknowledgement inside the Description area
-    // We use innerHTML to format the headings and list nicely
+    // 3. Content Injection
     const contentArea = document.getElementById('main-desc');
     
-    // Generate Student List HTML
+    // Create Student List Items (No bullets, styled by CSS)
     const studentListHTML = INTRO_CONTENT.students
-        .map(student => `<li style="margin-bottom: 5px;">${student}</li>`)
+        .map(student => `<li>${student}</li>`)
         .join('');
 
     contentArea.innerHTML = `
-        <h3 style="text-align: left; color: #1e293b; margin-bottom: 10px; margin-top: 0;">${INTRO_CONTENT.aimTitle}</h3>
-        <p style="text-align: justify; margin-bottom: 30px;">
-            ${INTRO_CONTENT.aimContent}
-        </p>
+        <div class="section-block">
+            <h3 class="section-title">${INTRO_CONTENT.aimTitle}</h3>
+            <p class="section-text">${INTRO_CONTENT.aimContent}</p>
+        </div>
 
-        <h3 style="text-align: left; color: #1e293b; margin-bottom: 10px;">${INTRO_CONTENT.ackTitle}</h3>
-        <p style="text-align: justify; margin-bottom: 15px;">
-            ${INTRO_CONTENT.ackContent}
-        </p>
+        <div class="section-block">
+            <h3 class="section-title">${INTRO_CONTENT.ackTitle}</h3>
+            <p class="section-text">${INTRO_CONTENT.ackContent}</p>
+        </div>
 
-        <ul style="text-align: left; padding-left: 20px; line-height: 1.6; color: #475569;">
-            ${studentListHTML}
-        </ul>
+        <div class="section-block">
+            <ul class="student-grid">
+                ${studentListHTML}
+            </ul>
+        </div>
     `;
+
+    // 4. Footer
+    const footer = document.getElementById('intro-footer');
+    footer.innerHTML = `<p>&copy; 2025 Virtual Laboratory. Department of Mechanical Engineering.</p>`;
 });

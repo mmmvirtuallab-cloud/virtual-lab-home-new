@@ -4,8 +4,8 @@
 export const SITE_DATA = {
     brandName: 'Virtual Laboratory',
     brandSub: 'By MIT',
-    footerText: '&copy; 2025 Virtual Laboratory. All Rights Reserved.',
-    footerSubText: 'Department of Production Technology (DoPT), MIT Campus, Anna University, Chennai'
+    footerText: 'Developed and coordinated by: Dr. S.Vijayakumar, Dr.S.Sathish',
+    footerSubText: ' Department of Production Technology, MIT Campus, Anna University, Chennai.'
 };
 
 // --- HOME PAGE CONTENT ---
@@ -82,7 +82,9 @@ const EXPERIMENTS = [
         title: 'Profile Projector',
         description: 'Study of Profile Projector and Measurement of Object Dimensions.',
         imagePath: 'images/profileprojector.png',
-        link: "https://isu-ismail.github.io/profile-projector/#/experiments/profile-projector/Aim"
+        // link: "https://mmmvirtuallab-cloud.github.io/profile-projector/"
+        link:"/profile-projector/"
+
     },
     {
         id: 'exp-2',
@@ -106,7 +108,7 @@ const EXPERIMENTS = [
         title: "Three Wire Method",
         description: 'Technique used to accurately measure the effective diameter of a screw thread.',
         imagePath: 'images/threewire.png',
-        link: "https://mmmvirtuallab-cloud.github.io/Three-Wire-Method/index.html"
+        link: "/three-wire/"
     },
     {
         id: 'exp-5',
