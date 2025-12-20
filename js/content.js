@@ -125,6 +125,22 @@ const EXPERIMENTS = [
         description: 'Measure and layout angles with high precision using a versatile bevel protractor.',
         imagePath: 'images/bevelprotractor.png',
         link: '/bevel-protractor/'
+    },
+    {
+        id: 'exp-7',
+        subject: 'Metrology',
+        title: 'Taper Angle Measurement',
+        description: 'Measure taper angles accurately using precision sphere.',
+        imagePath: 'images/taper.png',
+        link: '/taper-angle/'
+    },
+    {
+        id: 'exp-8',
+        subject: 'Metrology',
+        title: 'Vernier Caliper Experiment',
+        description: 'Measure internal and external dimensions with high precision using a vernier caliper.',
+        imagePath: 'images/vernier.png',
+        link: '/vernier-caliper/'
     }
 ];
 
