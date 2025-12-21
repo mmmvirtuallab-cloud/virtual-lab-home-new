@@ -56,15 +56,15 @@ export const ABOUT_CONTENT = [
 export const HOME_CATEGORY_CARDS = [
     {
         id: 'Metrology',
-        displayTitle: 'Metrology Lab',
+        displayTitle: 'Metrology',
         description: 'Precision measurement and calibration experiments.',
-        image: 'images/profileprojector.png'
+        image: 'images/metrology.png'
     },
     {
-        id: 'Dynamics',
-        displayTitle: 'Dynamics Lab',
-        description: 'Study of forces and torques and their effect on motion.',
-        image: 'images/profile.jpg'
+        id: 'Egineering Graphics',
+        displayTitle: 'Engineering Graphics',
+        description: 'Experiments related to technical drawing and design.',
+        image: 'images/edrawing.png'
     },
     {
         id: 'Fluid',
@@ -141,6 +141,14 @@ const EXPERIMENTS = [
         description: 'Measure internal and external dimensions with high precision using a vernier caliper.',
         imagePath: 'images/vernier.png',
         link: '/vernier-caliper/'
+    },
+    {
+        id: 'exp-9',
+        subject: 'Metrology',
+        title: 'Roundness Measurement',
+        description: 'Mesure roundness deviations of cylindrical objects using v-block and dial gauge.',
+        imagePath: 'images/roundness.png',
+        link: '/roundness-exp/'
     }
 ];
 

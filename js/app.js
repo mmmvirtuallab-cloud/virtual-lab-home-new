@@ -134,7 +134,7 @@ function render() {
         const filtered = EXPERIMENTS.filter(e => e.subject === subject || subject === 'All');
         
         if(filtered.length === 0) {
-            listContainer.innerHTML = '<p>No experiments found for this category.</p>';
+            listContainer.innerHTML = '<p>No experiments found for this category will be available soon !</p>';
             return;
         }
 
