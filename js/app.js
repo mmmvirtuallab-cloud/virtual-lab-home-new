@@ -33,20 +33,17 @@ function getAboutView() {
     ABOUT_CONTENT.forEach(section => {
         htmlContent += `<h3>${section.title}</h3>`;
         
-        // Optional intro text (like "Upon successful use...")
         if(section.intro) {
             htmlContent += `<p>${section.intro}</p>`;
         }
 
         if (section.isList) {
-            // Render as numbered list
             htmlContent += `<ol class="about-list">`;
             section.text.forEach(item => {
                 htmlContent += `<li>${item}</li>`;
             });
             htmlContent += `</ol>`;
         } else {
-            // Render as standard paragraph
             htmlContent += `<p>${section.text}</p>`;
         }
     });
@@ -54,6 +51,73 @@ function getAboutView() {
     htmlContent += `</div>`;
     return htmlContent;
 }
+
+// --- PULL TO REFRESH LOGIC ---
+function setupPullToRefresh() {
+    const container = document.getElementById('app-container');
+    const loader = document.getElementById('ptr-loader');
+    const icon = document.getElementById('ptr-icon');
+    
+    let startY = 0;
+    let isPulling = false;
+    let distance = 0;
+    const threshold = 150; // Required drag distance to trigger reload
+
+    // 1. Touch Start
+    container.addEventListener('touchstart', (e) => {
+        // Only enable if we are at the very top of the scroll
+        if (container.scrollTop === 0) {
+            startY = e.touches[0].clientY;
+            isPulling = true;
+        } else {
+            isPulling = false;
+        }
+    }, { passive: true });
+
+    // 2. Touch Move
+    container.addEventListener('touchmove', (e) => {
+        if (!isPulling) return;
+
+        const currentY = e.touches[0].clientY;
+        distance = currentY - startY;
+
+        // Only react if pulling DOWN
+        if (distance > 0) {
+            // Visual Feedback: Move the loader down
+            // We use a logarithmic curve so it feels "stretchy"
+            const translateVal = Math.min(distance * 0.4, 80); 
+            
+            loader.style.opacity = '1';
+            loader.style.transform = `translateY(${translateVal}px)`;
+            
+            // Rotate the icon based on distance
+            icon.style.transform = `rotate(${distance}deg)`;
+        }
+    }, { passive: true });
+
+    // 3. Touch End
+    container.addEventListener('touchend', () => {
+        if (!isPulling) return;
+        isPulling = false;
+
+        // Check if dragged far enough
+        if (distance > threshold) {
+            // Trigger Reload
+            loader.style.transform = `translateY(50px)`; // Lock position
+            icon.classList.add('ptr-spinning'); // Start spinning animation
+            
+            setTimeout(() => {
+                window.location.reload();
+            }, 500); // Small delay so user sees the spin
+        } else {
+            // Snap back (Reset)
+            loader.style.opacity = '0';
+            loader.style.transform = 'translateY(-20px)';
+            distance = 0;
+        }
+    });
+}
+
 
 // --- RENDER LOGIC ---
 
@@ -134,6 +198,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Initial Render
     render();
+
+    // 3. Initialize Pull to Refresh
+    setupPullToRefresh();
 });
 
 // Listen for navigation changes

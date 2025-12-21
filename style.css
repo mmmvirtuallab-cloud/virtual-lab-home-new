@@ -283,3 +283,99 @@ body {
     font-weight: 600;
 }
 .btn-back:hover { color: var(--primary-blue); }
+
+/* =========================================
+   MOBILE RESPONSIVE STYLES (Max Width 768px)
+   ========================================= */
+@media (max-width: 768px) {
+    
+    /* 1. Header Layout */
+    .navbar {
+        height: 60px; 
+        padding: 0 10px; /* Tight padding */
+        
+        /* Keep logos pushed to edges so title has room in center */
+        justify-content: space-between; 
+    }
+
+    .logo { height: 30px; } /* Smaller logos */
+
+    /* 2. TITLE - MAKE VISIBLE & COMPACT */
+   .nav-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /* Position absolutely on the left, next to the logo */
+        position: absolute;
+        left: 55px; /* Adjust this value if it's too close/far from the logo */
+        top: 50%;
+        transform: translateY(-50%); /* Center vertically only */
+        z-index: 1;
+
+        text-align: left; /* Ensure text aligns left */
+        width: auto;
+        max-width: 50%; /* Prevent overlap with right navigation */
+    }
+
+    .brand-name {
+        font-size: 1rem; /* Small font to fit mobile */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Add "..." if text is too long */
+    }
+
+    /* Hide the subtitle on mobile to save space */
+    .brand-sub { display: none; }
+
+    /* 3. Nav Actions (Links + Right Logo) */
+    .nav-actions {
+        gap: 8px; /* Very tight spacing */
+        z-index: 2; /* Ensure links sit ABOVE the title layer if they overlap */
+        background: rgba(255,255,255,0.8); /* Optional: semi-transparent bg to read text if overlap happens */
+        border-radius: 4px;
+    }
+
+    /* 4. Smaller Nav Links */
+    .nav-link { 
+        font-size: 0.75rem; /* Very small text */
+        font-weight: 600;
+        padding: 2px 5px;   /* Easier to tap */
+    }
+
+    /* 5. General Layout Adjustments */
+    #app-container {
+        padding: 15px; 
+    }
+
+    /* 6. Hero Section */
+    .hero h1 {
+        font-size: 2rem; 
+        letter-spacing: -1px;
+    }
+    .hero p { font-size: 0.95rem; }
+
+    /* 7. Experiment List Item (Stacked) */
+    .exp-list-item {
+        flex-direction: column; 
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .exp-thumb {
+        width: 100%; 
+        height: 180px; 
+        margin-bottom: 5px;
+    }
+
+    .exp-info { width: 100%; }
+    .exp-info h3 { font-size: 1.3rem; }
+    
+    .btn-start {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* 8. About Page */
+    .about-container { padding: 20px; }
+}
