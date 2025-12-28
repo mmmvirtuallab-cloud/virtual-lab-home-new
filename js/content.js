@@ -83,7 +83,7 @@ const EXPERIMENTS = [
         description: 'Study of Profile Projector and Measurement of Object Dimensions.',
         imagePath: 'images/profileprojector.png',
         // link: "https://mmmvirtuallab-cloud.github.io/profile-projector/"
-        link:"/profile-projector/"
+        link:"../profile-projector/"
 
     },
     {
@@ -92,7 +92,7 @@ const EXPERIMENTS = [
         title: "Micrometer",
         description: 'An outside micrometer is a precision measuring instrument used to measure external dimensions with high accuracy.',
         imagePath: 'images/micrometer.png',
-        link: "/micro-meter/"
+        link: "../micro-meter/"
     },
     {
         id: 'exp-3',
@@ -100,7 +100,7 @@ const EXPERIMENTS = [
         title: "Surface Roughness (Profilometer)",
         description: 'A profilometer is a precision measuring instrument used to measure the surface profile of a material.',
         imagePath: 'images/profile.jpg',
-        link: "https://mmmvirtuallab-cloud.github.io/surface-roughness"
+        link: "../profilo-meter/"
     },
     {
         id: 'exp-4',
@@ -108,7 +108,7 @@ const EXPERIMENTS = [
         title: "Three Wire Method",
         description: 'Technique used to accurately measure the effective diameter of a screw thread.',
         imagePath: 'images/threewire.png',
-        link: "/three-wire/"
+        link: "../three-wire/"
     },
     {
         id: 'exp-5',
@@ -116,7 +116,7 @@ const EXPERIMENTS = [
         title: 'Optical Autocollimator',
         description: 'Measure minute angular deviations and verify surface straightness using precision optical principles.',
         imagePath: 'images/autocollimator.png',
-        link: 'https://mmmvirtuallab-cloud.github.io/autocollimator-lab/'
+        link: '../auto-collimator/'
     },
     {
         id: 'exp-6',
@@ -124,7 +124,7 @@ const EXPERIMENTS = [
         title: 'Bevel Protractor',
         description: 'Measure and layout angles with high precision using a versatile bevel protractor.',
         imagePath: 'images/bevelprotractor.png',
-        link: '/bevel-protractor/'
+        link: '../bevel-protractor/'
     },
     {
         id: 'exp-7',
@@ -132,7 +132,7 @@ const EXPERIMENTS = [
         title: 'Taper Angle Measurement',
         description: 'Measure taper angles accurately using precision sphere.',
         imagePath: 'images/taper.png',
-        link: '/taper-angle/'
+        link: '../taper-angle/'
     },
     {
         id: 'exp-8',
@@ -140,7 +140,7 @@ const EXPERIMENTS = [
         title: 'Vernier Caliper Experiment',
         description: 'Measure internal and external dimensions with high precision using a vernier caliper.',
         imagePath: 'images/vernier.png',
-        link: '/vernier-caliper/'
+        link: '../vernier-caliper/'
     },
     {
         id: 'exp-9',
@@ -148,7 +148,31 @@ const EXPERIMENTS = [
         title: 'Roundness Measurement',
         description: 'Mesure roundness deviations of cylindrical objects using v-block and dial gauge.',
         imagePath: 'images/roundness.png',
-        link: '/roundness-exp/'
+        link: '../roundness-exp/'
+    },
+    {
+        id: 'exp-10',
+        subject: 'Metrology',
+        title: 'External Taper Angle Measurement',
+        description: 'Measure external taper angles accurately using vernier caliper ',
+        imagePath: 'images/externaltaper.png',
+        link: '../external-taper/'
+    },
+    {
+        id: 'exp-11',
+        subject: 'Metrology',
+        title: 'Electrical Comparator',
+        description: 'This experiment explores the Electrical Comparator, a precise instrument used in Metrology for comparing object dimensions against a standard.',
+        imagePath: 'images/electricalcomparator.png',
+        link: '../electrical-comparator/'
+    },
+    {
+        id: 'exp-12',
+        subject: 'Metrology',
+        title: 'Mechanical Comparator',
+        description: 'Compares workpiece dimensions against a standard, measuring small differences in mechanical components.',
+        imagePath: 'images/mechanicalcomparator.png',
+        link: '../mechanical-comparator/'
     }
 ];
 
