@@ -58,19 +58,19 @@ export const HOME_CATEGORY_CARDS = [
         id: 'Metrology',
         displayTitle: 'Metrology',
         description: 'Precision measurement and calibration experiments.',
-        image: 'images/metrology.png'
+        image: 'images/metrology.jpg'
     },
     {
         id: 'Egineering Graphics',
         displayTitle: 'Engineering Graphics',
         description: 'Experiments related to technical drawing and design.',
-        image: 'images/edrawing.png'
+        image: 'images/edrawing.jpg'
     },
     {
         id: 'Fluid',
         displayTitle: 'Fluid Mechanics',
         description: 'Experiments related to the mechanics of fluids.',
-        image: 'images/micrometer.png'
+        image: 'images/fluid.jpg'
     }
 ];
 
@@ -81,7 +81,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'Profile Projector',
         description: 'Study of Profile Projector and Measurement of Object Dimensions.',
-        imagePath: 'images/profileprojector.png',
+        imagePath: 'images/experiment/profileprojector.JPG',
         // link: "https://mmmvirtuallab-cloud.github.io/profile-projector/"
         link:"../profile-projector/"
 
@@ -91,7 +91,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: "Micrometer",
         description: 'An outside micrometer is a precision measuring instrument used to measure external dimensions with high accuracy.',
-        imagePath: 'images/micrometer.png',
+        imagePath: 'images/experiment/micrometer.JPG',
         link: "../micro-meter/"
     },
     {
@@ -99,7 +99,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: "Surface Roughness (Profilometer)",
         description: 'A profilometer is a precision measuring instrument used to measure the surface profile of a material.',
-        imagePath: 'images/profile.jpg',
+        imagePath: 'images/experiment/surfaceroughness.jpg',
         link: "../profilo-meter/"
     },
     {
@@ -107,7 +107,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: "Three Wire Method",
         description: 'Technique used to accurately measure the effective diameter of a screw thread.',
-        imagePath: 'images/threewire.png',
+        imagePath: 'images/experiment/threewire.JPG',
         link: "../three-wire/"
     },
     {
@@ -115,7 +115,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'Optical Autocollimator',
         description: 'Measure minute angular deviations and verify surface straightness using precision optical principles.',
-        imagePath: 'images/autocollimator.png',
+        imagePath: 'images/experiment/autocollimator.jpg',
         link: '../auto-collimator/'
     },
     {
@@ -123,15 +123,15 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'Bevel Protractor',
         description: 'Measure and layout angles with high precision using a versatile bevel protractor.',
-        imagePath: 'images/bevelprotractor.png',
+        imagePath: 'images/experiment/bevelprotractor.JPG',
         link: '../bevel-protractor/'
     },
     {
         id: 'exp-7',
         subject: 'Metrology',
-        title: 'Taper Angle Measurement',
-        description: 'Measure taper angles accurately using precision sphere.',
-        imagePath: 'images/taper.png',
+        title: 'Internal Taper Angle Measurement',
+        description: 'Measure internal taper angles accurately using precision sphere.',
+        imagePath: 'images/experiment/internaltaper.png',
         link: '../taper-angle/'
     },
     {
@@ -139,7 +139,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'Vernier Caliper Experiment',
         description: 'Measure internal and external dimensions with high precision using a vernier caliper.',
-        imagePath: 'images/vernier.png',
+        imagePath: 'images/experiment/verniercaliper.JPG',
         link: '../vernier-caliper/'
     },
     {
@@ -147,7 +147,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'Roundness Measurement',
         description: 'Mesure roundness deviations of cylindrical objects using v-block and dial gauge.',
-        imagePath: 'images/roundness.png',
+        imagePath: 'images/experiment/roundness.JPG',
         link: '../roundness-exp/'
     },
     {
@@ -155,7 +155,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'External Taper Angle Measurement',
         description: 'Measure external taper angles accurately using vernier caliper ',
-        imagePath: 'images/externaltaper.png',
+        imagePath: 'images/experiment/externaltaper.JPG',
         link: '../external-taper/'
     },
     {
@@ -163,7 +163,7 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'Electrical Comparator',
         description: 'This experiment explores the Electrical Comparator, a precise instrument used in Metrology for comparing object dimensions against a standard.',
-        imagePath: 'images/electricalcomparator.png',
+        imagePath: 'images/experiment/electricalcomparator.jpg',
         link: '../electrical-comparator/'
     },
     {
@@ -171,8 +171,24 @@ const EXPERIMENTS = [
         subject: 'Metrology',
         title: 'Mechanical Comparator',
         description: 'Compares workpiece dimensions against a standard, measuring small differences in mechanical components.',
-        imagePath: 'images/mechanicalcomparator.png',
+        imagePath: 'images/experiment/mechanicalcomparator.JPG',
         link: '../mechanical-comparator/'
+    },
+    {
+        id: 'exp-13',
+        subject: 'Metrology',
+        title: 'Sine Bar Experiment',
+        description: 'Utilizes a sine bar to measure angles and slopes with high precision in engineering applications.',
+        imagePath: 'images/experiment/sinebar.jpg',
+        link: '../sine-bar/'
+    },
+    {
+        id: 'exp-14',
+        subject: 'Metrology',
+        title: 'Pnuematic Comparator',
+        description: 'Measures small dimensional differences using air pressure variations for high-precision comparisons.',
+        imagePath: 'images/experiment/pnuematiccomparator.JPG',
+        link: '../pneumatic-comparator/'
     }
 ];
 
